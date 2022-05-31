@@ -6,7 +6,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 
 /**
- * The class for rendering a "snake"
+ * The class for rendering the "snake"
  */
 public class SnakeBody
 {
@@ -20,8 +20,8 @@ public class SnakeBody
 
     /**
      * The constructor for creating the body of the "snake"
-     * @param x the length of the "snake's" horizontal axis
-     * @param y the length of the "snake's" vertical axis
+     * @param x the horizontal position of the "snake"
+     * @param y the vertical position of the "snake"
      * @param dimension the width and height of the "snake" body
      */
     public SnakeBody(int x,int y,int dimension)
@@ -51,7 +51,7 @@ public class SnakeBody
 
     /**
      * The getter method
-     * @return the length of the "snake's" horizontal axis
+     * @return the horizontal position of the "snake"
      */
     public int getX()
     {
@@ -60,7 +60,7 @@ public class SnakeBody
 
     /**
      * The getter method
-     * @return the length of the "snake's" vertical axis
+     * @return the vertical position of the "snake"
      */
     public int getY()
     {

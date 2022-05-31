@@ -8,7 +8,7 @@ import frame.GameIntro;
 public class Main
 {
     /**
-     * Method for running the program
+     * The Method for running the program
      */
     public static void main(String[] args)
     {

@@ -12,7 +12,7 @@ public class Game extends JFrame
 {
 
     /**
-     * Constructor - calls the createFrame() method
+     * The constructor - calls the createFrame() method
      */
     public Game()
     {
@@ -20,7 +20,7 @@ public class Game extends JFrame
     }
 
     /**
-     * Method for setting up the GUI with a "snake" on screen
+     * The method for setting up the GUI with a "snake" on screen
      *
      */
     public void createFrame()
