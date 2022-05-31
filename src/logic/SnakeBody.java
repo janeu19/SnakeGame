@@ -4,12 +4,26 @@ import frame.GameSelection;
 
 import java.awt.Color;
 import java.awt.Graphics;
+
+/**
+ * The class for rendering a "snake"
+ */
 public class SnakeBody
 {
+    /**
+     * "Snake" properties
+     */
     private final int x;
     private final int y;
     private final int width;
     private final int height;
+
+    /**
+     * The constructor for creating the body of the "snake"
+     * @param x the length of the "snake's" horizontal axis
+     * @param y the length of the "snake's" vertical axis
+     * @param dimension the width and height of the "snake" body
+     */
     public SnakeBody(int x,int y,int dimension)
     {
         this.x=x;
@@ -17,6 +31,11 @@ public class SnakeBody
         width=dimension;
         height=dimension;
     }
+
+    /**
+     * The method draws a "snake" and sets its color
+     * @param g for rendering and using colors
+     */
     public void draw(Graphics g)
     {
         g.setColor(Color.black);
@@ -29,10 +48,20 @@ public class SnakeBody
             g.setColor(Color.blue);
         g.fillRect(x*width+2,y*height+2,width-3,height-3);
     }
+
+    /**
+     * The getter method
+     * @return the length of the "snake's" horizontal axis
+     */
     public int getX()
     {
         return x;
     }
+
+    /**
+     * The getter method
+     * @return the length of the "snake's" vertical axis
+     */
     public int getY()
     {
         return y;

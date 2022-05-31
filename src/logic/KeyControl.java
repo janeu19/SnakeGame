@@ -2,8 +2,16 @@ package logic;
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+
+/**
+ * The class for listening to keys and subsequent movement of the "snake"
+ */
 class KeyControl extends KeyAdapter
 {
+    /**
+     * @param e the event to be processed
+     * The method listens and subsequent change of "snake" movement
+     */
     public void keyPressed(KeyEvent e)
     {
         int key=e.getKeyCode();

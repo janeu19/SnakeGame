@@ -8,12 +8,23 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+
+/**
+ * The class to create a GUI that contains the player's final score
+ */
 public class GameFinal extends JFrame implements ActionListener
 {
+    /**
+     * JavaX swing components for the GUI
+     */
     final JButton exit;
     final JLabel over;
     final JLabel scoreFinal;
     final Font f2;
+
+    /**
+     * Method for setting up the GUI with a final score (used a WindowBuilder)
+     */
     public GameFinal()
     {
         setTitle(GameIntro.titleValue);
@@ -37,6 +48,10 @@ public class GameFinal extends JFrame implements ActionListener
         setLocationRelativeTo(null);
         setVisible(true);
     }
+
+    /**
+     * @param e the event to be processed - closes the GUI
+     */
     public void actionPerformed(ActionEvent e)
     {
         if(e.getSource()==exit)

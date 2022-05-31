@@ -5,9 +5,21 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+
+/**
+ * The class to create a GUI that contains basic information about the game
+ */
 public class GameIntro extends JFrame implements ActionListener
 {
+
+    /**
+     * String to set the title for all GUIs
+     */
     static final String titleValue="SnakeGame";
+
+    /**
+     * JavaX swing components for the GUI
+     */
     final JLabel top;
     final JLabel about;
     final JLabel about1;
@@ -29,13 +41,17 @@ public class GameIntro extends JFrame implements ActionListener
     final JLabel enjoy;
     final JButton next;
     final JButton exit;
+
+    /**
+     * Method for setting up the GUI with basic information about the game (used a WindowBuilder)
+     */
     public GameIntro()
     {
         setTitle(titleValue);
         setSize(500,600);
         top=new JLabel("WELCOME TO SNAKE GAME");
         about=new JLabel("ABOUT :-");
-        about1=new JLabel("This Game is designed by Syed Mohd Altamash.");
+        about1=new JLabel("This Game is designed by Jan Neubauer.");
         about2=new JLabel("The Game gives you options to choose your snake.");
         about3=new JLabel("The Game may improves your Reflexes.");
         about4=new JLabel("The Game may Sharpens your Mind.");
@@ -104,6 +120,10 @@ public class GameIntro extends JFrame implements ActionListener
         setResizable(false);
         setVisible(true);
     }
+
+    /**
+     * @param e the event to be processed - closes the GUI and opens a new one
+     */
     public void actionPerformed(ActionEvent e)
     {
         if(e.getSource()==next)

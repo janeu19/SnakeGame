@@ -8,8 +8,15 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JRadioButton;
+
+/**
+ * The class for creating a GUI for setting up a game
+ */
 public class GameSelection extends JFrame implements ActionListener
 {
+    /**
+     * JavaX swing components for the GUI
+     */
     final JLabel selection1;
     final JLabel selection2;
     final JLabel selection3;
@@ -28,7 +35,11 @@ public class GameSelection extends JFrame implements ActionListener
     final ButtonGroup grids;
     public static int flag=0;
     public static int gridFlag=0;
-    GameSelection()
+
+    /**
+     * Method for setting up the GUI with game settings (used a WindowBuilder)
+     */
+    public GameSelection()
     {
         setSize(400,400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -90,6 +101,11 @@ public class GameSelection extends JFrame implements ActionListener
         setLocationRelativeTo(null);
         setVisible(true);
     }
+
+    /**
+     * @param e the event to be processed
+     * The method sets game properties
+     */
     public void actionPerformed(ActionEvent e)
     {
         if(e.getSource()==play)

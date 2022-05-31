@@ -6,12 +6,23 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+
+/**
+ * The class to create a GUI that starts the game
+ */
 public class GameStart extends JFrame implements ActionListener
 {
+    /**
+     * JavaX swing components for the GUI
+     */
     final JLabel alert;
     final JButton start;
     final Font f1;
-    GameStart()
+
+    /**
+     * The method for setting up the GUI with start button (used a WindowBuilder)
+     */
+    public GameStart()
     {
         setTitle(GameIntro.titleValue);
         setSize(400,250);
@@ -30,6 +41,11 @@ public class GameStart extends JFrame implements ActionListener
         setResizable(false);
         setVisible(true);
     }
+
+    /**
+     * @param e the event to be processed
+     * The method starts the game
+     */
     public void actionPerformed(ActionEvent e) {
         if(e.getSource()==start)
         {
